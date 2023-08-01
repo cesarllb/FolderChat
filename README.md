@@ -11,7 +11,6 @@ This is an application that allows you to ask questions about any data source us
 5. A langchain is created consisting of a LLM model (`gpt-3.5-turbo` by default) and the vector store as retriever
 6. When asking questions to the application, the chain embeds the input prompt and does a similarity search in the vector store and uses the best results as context for the LLM to generate an appropriate response
 7. Finally, the chat history is cached locally to enable a [ChatGPT](https://chat.openai.com/) like Q&A conversation
-
 8. In addition, this application also allows you to specify a directory in which the system will monitor any changes and automatically add all changes to the knowledge base.
 
 ## Good to know
@@ -26,25 +25,7 @@ This is an application that allows you to ask questions about any data source us
 - Your data won't load? Feel free to open an Issue or PR and contribute!
 - Yes, Chad in `DataChad` refers to the well-known [meme](https://www.google.com/search?q=chad+meme)
 
-## How does it look like?
 
-<img src="./datachad.png" width="100%"/>
-
-## TODO LIST
-If you like to contribute, feel free to grab any task
-- [x] Refactor utils, especially the loaders
-- [x] Add option to choose model and embeddings
-- [x] Enable fully local / private mode
-- [x] Add option to upload multiple files to a single dataset
-- [x] Decouple datachad modules from streamlit
-- [ ] Add user creation and login
-- [ ] Load and delete existing knowledge bases
-- [ ] Make all I/O asynchronous
-- [ ] Implement FastAPI routes and backend app
-- [ ] Implement a proper frontend (react or whatever)
-- [ ] containerize the app
-- [ ] deploy the app with k8s
-- [ ] Add Image caption and Audio transcription support
 =======
 - The OSS model compatible with `Local Mode` currently is [GPT4all](https://gpt4all.io/models/ggml-g
 >>>>>>> bb38fef (initial commit)
